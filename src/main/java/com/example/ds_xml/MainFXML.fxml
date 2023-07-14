@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="778.0" style="-fx-background-color: #000000; -fx-border-color: #eadc38; -fx-border-radius: 150;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ds_xml.MainFXMLController">
+   <children>
+      <Button layoutX="321.0" layoutY="480.0" mnemonicParsing="false" onAction="#OnMostInfluencerButton" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #f49c4f;" text="Most influencer user" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="inTA" layoutX="29.0" layoutY="131.0" prefHeight="424.0" prefWidth="267.0" promptText="you can type your text or upload file from upload XML ">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <TextArea fx:id="outTA" layoutX="479.0" layoutY="131.0" prefHeight="424.0" prefWidth="267.0" promptText="The result " />
+      <Label layoutX="123.0" layoutY="74.0" text="Input">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f1f439" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label layoutX="559.0" layoutY="74.0" text="Output">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f1f439" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Button layoutX="109.0" layoutY="581.0" mnemonicParsing="false" onAction="#OnLoadFileButton" prefHeight="43.0" prefWidth="107.0" style="-fx-background-color: #f49c4f;" text="Load File" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button layoutX="559.0" layoutY="581.0" mnemonicParsing="false" onAction="#OnSaveFileButton" prefHeight="43.0" prefWidth="107.0" style="-fx-background-color: #f49c4f;" text="Save File" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="297.0" mnemonicParsing="false" onAction="#OnJSONButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="XML To JSON" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button ellipsisString="" layoutX="329.0" layoutY="139.0" mnemonicParsing="false" onAction="#OnConsistencyCheckButton" style="-fx-background-color: #f49c4f;" text="Check Consistency" textAlignment="CENTER" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnFormatButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="Formatting" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="256.0" mnemonicParsing="false" onAction="#OnMinifyButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="Minifying" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="338.0" mnemonicParsing="false" onAction="#OnCompressButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="Compression" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="329.0" layoutY="380.0" mnemonicParsing="false" onAction="#OnDecompressButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="Decompression" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="332.0" layoutY="441.0" mnemonicParsing="false" onAction="#OnGraphButton" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #f49c4f;" text="Graph" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="260.0" layoutY="23.0" prefHeight="66.0" prefWidth="239.0" text="XML Editor" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="45.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eb5b14" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="329.0" layoutY="178.0" mnemonicParsing="false" onAction="#OnCorrectionButton" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #f49c4f;" text="Correction" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="331.0" layoutY="521.0" mnemonicParsing="false" onAction="#OnMostActiveButton" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #f49c4f;" text="Most active user" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
